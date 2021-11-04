@@ -14,10 +14,6 @@ hold on
 plot(t,V4,'k','LineWidth',2)
 yticks([-69 -39]);
 ylim([-69 -34]);
-% yticks([-68 -53]);
-% ylim([-68 -50]);
-% yticks([-70 -22]);
-% ylim([-70 -13]);
 xlabel('time(s)','FontSize',18)
 ylabel('Voltage(mV)','FontSize',18)
 legend('outward','inward','FontSize',14)
@@ -41,30 +37,4 @@ xlabel('time(s)','FontSize',18)
 ylabel('Normalized Calcium','FontSize',18)
 legend('outward','inward','FontSize',14)
 
-
-% % sine wave
-% figure
-% 
-% fmsg=0.5;	%Message signal frequency
-% Fs=1000;	%sampling frequency
-% t=0:0.001:5; % Time duaration defined
-% 
-% Amsg=1*ones(size(t));
-% x=-Amsg.*cos(2*pi*fmsg*t);
-% 
-% plot(t,x,'k','LineWidth',0.7)
-% ylim([-2 2])
-% xlim([-1 6])
-
-% % square wave
-% figure
-% 
-% fc=0.5;
-% t=0:0.001:5;
-% Ac=ones(size(t));
-% y=Ac+Ac.*square(-2*pi*fc*t);
-% y=y/2;
-% plot(t,y,'k','LineWidth',0.7)
-% ylim([-1 2])
-% xlim([-1 6])
 

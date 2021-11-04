@@ -70,40 +70,4 @@ for idx = 1:length(all_x(1,:))
 end
 T = array2table([F1_magnitude;F1_phase;F2_magnitude;F2_phase]')
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% figure
-% x=T1.Stim16(5:end);
-% y=fft(x); %DFT
-% L=length(x); 
-% P2 = abs(y/L);
-% P1 = P2(1:L/2+1);
-% P1(2:end-1) = 2*P1(2:end-1);
-% Fs = 1002;
-% f = Fs*(0:(L/2))/L;
-% subplot(3,1,1)
-% plot(f,P1) 
-% xlim([0 100])
-% ylim([0 20])
-% title('Single-Sided Amplitude Spectrum of X(t)')
-% xlabel('f (Hz)')
-% ylabel('|P1(f)|')
-% 
-% df=Fs/length(y); %frequency resolution
-% freq=(0:1:length(y)/2)*df; %frequency axis
-% subplot(3,1,2);
-% M=abs(y)/length(x)*2; %amplitude spectrum
-% stem(freq, M(1:length(freq)), 'LineWidth', 0.5);
-% xlim([0 100]);
-% grid on;  
-% 
-% xlabel('Frequency (Hz)')
-% ylabel('Magnitude');
-% 
-% subplot(3,1,3);
-% P=angle(y)*180/pi; %phase spectrum (in deg.)
-% stem(freq, P(1:length(freq)), 'LineWidth', 0.5);
-% xlim([0 100]);
-% grid on;
-% 
-% xlabel('Frequency (Hz)');
-% ylabel('Phase (degree)');
+
