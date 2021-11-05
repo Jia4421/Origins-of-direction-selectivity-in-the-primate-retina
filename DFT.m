@@ -39,26 +39,7 @@ for idx = 1:length(all_x(1,:))
     freq=(0:1:length(y)/2)*df; %frequency axis
     M=abs(y)/length(x)*2; %amplitude spectrum
     P=angle(y)*180/pi; %phase spectrum (in deg.)
-
-%     subplot(3,1,1)
-%     plot(f,P1)
-%     title('Single-Sided Amplitude Spectrum of X(t)')
-%     xlabel('f (Hz)')
-%     ylabel('|P1(f)|')
-%     xlim([0 100])
-%     ylim([0 20])    
-%     subplot(3,1,2);
-%     stem(freq, M(1:length(freq)), 'LineWidth', 0.5);
-%     xlim([0 100]);
-%     grid on;  
-%     xlabel('Frequency (Hz)')
-%     ylabel('Magnitude');
-%     subplot(3,1,3);
-%     stem(freq, P(1:length(freq)), 'LineWidth', 0.5);
-%     xlim([0 100]);
-%     grid on;
-%     xlabel('Frequency (Hz)');
-%     ylabel('Phase (degree)');
+    
     
     %Find the F1 == signal frequecy and F2 == 2* signal frequecny
     I = find(f== sng_f); %Change the load smaples if error occurs
